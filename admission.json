@@ -1,0 +1,188 @@
+{
+    "faqs": [
+        {
+            "question": "Hi",
+            "answer": "Hi! How can I help you today?"
+        },
+        {
+            "question": "Hello",
+            "answer": "Hello! How can I assist you?"
+        },
+        {
+            "question": "Hey",
+            "answer": "Hey there! What can I do for you?"
+        },
+        {
+            "question": "What is your name?",
+            "answer": "You can call me Sathya, your virtual assistant."
+        },
+        {
+            "question": "who developed you?",
+            "answer": "Sahal, Farhana , and Fasil Developed me."
+        },
+        {
+            "question": "Who are you?",
+            "answer": "I am Sathya, a chatbot here to help you with RGNIYD admissions information."
+        },
+        {
+            "question": "What can you do?",
+            "answer": "I can help answer your questions about the RGNIYD college admissions process, programs offered, deadlines, and more."
+        },
+        {
+            "question": "How are you?",
+            "answer": "I'm just a program, but I'm here and ready to assist you!"
+        },
+        {
+            "question": "What are the admission requirements?",
+            "answer": "The admission requirements are a completed application form,Adhaar Details, CUET test scores."
+        },
+        {
+            "question": "When is the application deadline?",
+            "answer": "The application deadline is June 15th for the next semester."
+        },
+        {
+            "question": "How can I apply for financial aid?",
+            "answer": "You can apply for financial aid by filling out the FAFSA form online at fafsa.ed.gov."
+        },
+        {
+            "question": "What majors are offered?",
+            "answer": "We offer a wide range of majors including Computer Science, Social Work, Psychology,Mathematics  and sociology."
+        },
+        {
+            "question": "What is the tuition fee?",
+            "answer": "The tuition fee varies by program. You can visit the website at <a href='https://rgniyd.gov.in/?q=content/fee-structure-student-india-0' target='_blank'>fee structure</a> "
+        },
+        {
+            "question": "Are there any scholarships available?",
+            "answer": "Yes, we offer several scholarships based on academic merit, financial need, and other criteria. You can find more information on our website."
+        },
+        {
+            "question": "Is on-campus housing available?",
+            "answer": "Yes, we offer on-campus housing for all students. There are various dormitories and apartment-style housing options."
+        },
+        {
+            "question": "What student organizations are available?",
+            "answer": "We have a variety of student organizations, including academic clubs, sports teams, cultural groups, and more."
+        },
+        {
+            "question": "What are the application fees?",
+            "answer": "The application fee is free of cost"
+        },
+        {
+            "question": "How can I schedule a campus visit?",
+            "answer": "You can schedule a campus visit by filling out the visit request form on our website or by contacting the admissions office."
+        },
+        {
+            "question": "What support services are available for students?",
+            "answer": "We offer a range of support services including academic advising, career counseling, mental health services, and tutoring."
+        },
+        {
+            "question": "How do I contact the admissions office?",
+            "answer": "You can contact the admissions office by phone at (555) 123-4567 or by email at <a href='mailto:admissions@rgniyd.edu.'> emailID </a> "
+        },
+        {
+            "question": "Are there any international student programs?",
+            "answer": "Yes, we have programs specifically for international students, including orientation, visa support, and cultural exchange programs."
+        },
+        {
+            "question": "What is the student-to-faculty ratio?",
+            "answer": "The student-to-faculty ratio is 15:1, ensuring small class sizes and personalized attention."
+        },
+        {
+            "question": "What is the graduation rate?",
+            "answer": "The graduation rate is 85%, reflecting our commitment to student success."
+        },
+        {
+            "question": "What career services are available?",
+            "answer": "Our career services include job placement assistance, resume workshops, internship opportunities, and networking events."
+        },
+        {
+            "question": "Are there any online degree programs?",
+            "answer": "No Sorry!"
+        },
+        {
+            "question": "What research opportunities are available?",
+            "answer": "We offer numerous research opportunities across various disciplines. Students can participate in research projects, internships, and co-op programs."
+        },
+        {
+            "question": "What is the campus size?",
+            "answer": "The campus spans over 40 acres and includes state-of-the-art facilities, libraries, and recreational centers."
+        },
+        {
+            "question": "What is the process for transferring credits?",
+            "answer": "Transfer credit evaluations are conducted on a case-by-case basis. Submit your transcripts for review, and our admissions team will assist you."
+        },
+        {
+            "question": "Where can I find more information?",
+            "answer": "You can find more information on our official website <a href='www.rgniyd.gov.in' target='_blank'>admissions portal</a>  or by contacting the admissions office."
+        },
+        {
+            "question": "Do you offer part-time programs?",
+            "answer": "No. Sorry!"
+        },
+        {
+            "question": "Can I apply as a mature student?",
+            "answer": "Yes, we welcome applications from mature students. Specific requirements may vary, so please check our admissions page for more details."
+        },
+        {
+            "question": "What is the diversity like on campus?",
+            "answer": "Our campus is diverse, with students from various backgrounds and countries, contributing to a rich cultural environment."
+        },
+        {
+            "question": "Do you offer internship opportunities?",
+            "answer": "Yes, we offer various internship opportunities to help students gain practical experience in their field of study."
+        },
+        {
+            "question": "What is the campus safety like?",
+            "answer": "Campus safety is a top priority. We have 24/7 security, emergency response systems, and various safety programs to ensure a secure environment."
+        },
+        {
+            "question": "How can I get involved on campus?",
+            "answer": "You can get involved by joining student organizations, participating in events, volunteering, and engaging in various campus activities."
+        },
+        {
+            "question": "What dining options are available on campus?",
+            "answer": "We have multiple dining options, including cafeterias, coffee shops, and food courts offering a variety of cuisines to suit different tastes and dietary needs."
+        },
+        {
+            "question": "Do you offer study abroad programs?",
+            "answer": "Yes, we offer a range of study abroad programs allowing students to gain international experience and broaden their horizons."
+        },
+        {
+            "question": "What technology resources are available?",
+            "answer": "We provide advanced technology resources including computer labs, high-speed internet, online learning platforms, and technical support services."
+        },
+        {
+            "question": "Can I speak with a current student or alumni?",
+            "answer": "Yes, we can arrange for you to speak with a current student or alumni. Please contact the admissions office to set this up."
+        },
+        {
+            "question": "How is RGNIYD?",
+            "answer": "RGNIYD is a Educational institute under ministry of youth affairs. The Campus of RGNIYD is beautiful and is peaceful for the students to acquire their masters and phd."
+        },
+        {
+            "question": "How do I apply?",
+            "answer": "You can apply online through our <a href='www.rgniyd.gov.in' target='_blank'>admissions portal</a>. Complete the application form and submit the required documents."
+        },
+        {
+            "question": "Who is the HOD Head of the Department of Data SCience Cyber Security?",
+            "answer": "Dr. C Jayakumar is the Head of the department of Cyber Security and Data Science "
+        },
+        {
+            "question": "How many courses do RGNIYD offer?",
+            "answer": "RGNIYD offers 7 Courses in total CyberSecurity\n DataScience\nAI-ML\nMSW\nPsycology\nSociology\nEnglish."
+        },
+        {
+            "question": "Can you show me the college campus?",
+            "answer": "Here are some photos of our college campus:",
+            "image": "static/images/college_campus.jpg"
+        },
+        {
+            "question": "What do the classrooms look like?",
+            "answer": "Here is a photo of one of our classrooms:",
+            "image": "static/images/classroom.jpg"
+        }
+
+        
+    ]
+}

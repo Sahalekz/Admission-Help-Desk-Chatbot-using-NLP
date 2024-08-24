@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admissions Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #e5ddd5;
+            margin: 0;
+        }
+        #chat-container {
+            width: 90%;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        #header {
+            background-color: #075e54;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #header img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        #header h1 {
+            font-size: 18px;
+            margin: 0;
+        }
+        #chatbox {
+            flex-grow: 1;
+            padding: 10px;
+            overflow-y: auto;
+            background-color: #efeae2;
+        }
+        .user-message, .bot-response {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+        .user-message {
+            background-color: #dcf8c6;
+            align-self: flex-end;
+        }
+        .bot-response {
+            background-color: #ffffff;
+            align-self: flex-start;
+            border: 1px solid #ddd;
+        }
+        #input-container {
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #ddd;
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+        #message {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            outline: none;
+        }
+        #send {
+            padding: 10px 20px;
+            border: none;
+            background-color: #075e54;
+            color: white;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #send:hover {
+            background-color: #064e47;
+        }
+        #voice {
+            padding: 10px;
+            border: none;
+            background-color: #075e54;
+            color: white;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #voice:hover {
+            background-color: #064e47;
+        }
+    </style>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="header">
+            
+            <h1>Welcome to RGNIYD Admission Helpdesk</h1>
+        </div>
+        <div id="chatbox"></div>
+        <div id="input-container">
+            <input type="text" id="message" placeholder="Type your question here...">
+            <button id="send">Send</button>
+            <button id="voice">🎤</button>
+        </div>
+    </div>
+    <script>
+        const chatbox = document.getElementById("chatbox");
+
+        document.getElementById("send").onclick = function() {
+            sendMessage();
+        };
+
+        document.getElementById("voice").onclick = function() {
+            startVoiceRecognition();
+        };
+
+        function sendMessage() {
+            const userMessage = document.getElementById("message").value;
+            if (userMessage.trim() !== "") {
+                chatbox.innerHTML += '<div class="user-message">' + userMessage + '</div>';
+                document.getElementById("message").value = "";
+
+                fetch("/get_response", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ message: userMessage })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    chatbox.innerHTML += '<div class="bot-response">' + data.response.replace(/\n/g, '<br>') + '</div>';
+                    chatbox.scrollTop = chatbox.scrollHeight;
+                });
+            }
+        }
+
+        function startVoiceRecognition() {
+            const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+            recognition.lang = 'en-US';
+            recognition.interimResults = false;
+
+            recognition.onstart = function() {
+                console.log('Voice recognition started. Try speaking into the microphone.');
+            };
+
+            recognition.onspeechend = function() {
+                recognition.stop();
+            };
+
+            recognition.onresult = function(event) {
+                const transcript = event.results[0][0].transcript;
+                document.getElementById("message").value = transcript;
+                sendMessage();
+            };
+
+            recognition.onerror = function(event) {
+                console.error('Speech recognition error detected: ' + event.error);
+            };
+
+            recognition.start();
+        }
+    </script>
+</body>
+</html>
